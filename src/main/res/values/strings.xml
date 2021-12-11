@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">IQTester</string>
+    <string name="start_iq_test">Start IQ Test</string>
+    <string name="fake_logo_description">This is a fake logo I created as a joke for this app. I used Anime girls to entice weak males</string>
+    <string name="leeftijd">Uw Leeftijd</string>
+    <string name="voornaam">Uw Voornaam</string>
+    <string name="heel_erg_mee_eens">Heel erg mee eens</string>
+    <string name="beetje_mee_eens">Beetje mee eens</string>
+    <string name="niet_zeker">Niet zeker</string>
+    <string name="beetje_mee_oneens">Beetje mee oneens</string>
+    <string name="heel_erg_mee_oneens">Heel erg mee oneens</string>
+    <string name="volgende_vraag">Volgende vraag</string>
+    <string name="je_hebt_een_iq_van">Je hebt een IQ van:</string>
+    <string name="gefeliciteerd">Gefeliciteerd!</string>
+</resources>
