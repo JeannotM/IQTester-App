@@ -7,6 +7,11 @@ import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import android.service.autofill.UserData
 import android.widget.Toast
+import java.text.SimpleDateFormat
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+import java.util.*
+import kotlin.collections.ArrayList
 
 class DBHelper(var context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null, 1) {
 
@@ -92,10 +97,10 @@ class DBHelper(var context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, 
     }
 
     // below method is to get all data from our database
-    fun getLastTenItems(): ArrayList<userData> {
+    fun getLastTwentyItems(): ArrayList<userData> {
         val list: ArrayList<userData> = ArrayList()
         val db = this.readableDatabase
-        val query = "SELECT * FROM $TABLE_NAME ORDER BY ID DESC LIMIT 10"
+        val query = "SELECT * FROM $TABLE_NAME ORDER BY ID DESC LIMIT 20"
 
         val result: Cursor?
 
@@ -115,6 +120,7 @@ class DBHelper(var context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, 
                 val questions: Array<String> = result.getString(result.getColumnIndex(QUESTION_COL)).split(",").toTypedArray()
                 val answers: Array<String> = result.getString(result.getColumnIndex(ANSWER_COL)).split(",").toTypedArray()
                 val date = result.getString(result.getColumnIndex(DATE_COL))
+
                 val inputValues: ArrayList<QuestionAnswer> = ArrayList()
 
                 if(answers.size != 5) {

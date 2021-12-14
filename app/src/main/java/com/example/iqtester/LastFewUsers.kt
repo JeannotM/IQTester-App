@@ -29,7 +29,7 @@ class LastFewUsers : AppCompatActivity() {
 
     private fun getUsers() {
         val db = DBHelper(this)
-        val items = db.getLastTenItems()
+        val items = db.getLastTwentyItems()
         adapter?.addItems(items)
     }
 
