@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">IQTester</string>
+    <string name="start_iq_test">Start IQ Test</string>
+    <string name="fake_logo_description">This is a fake logo I created as a joke for this app. I used Anime girls to entice weak males</string>
+    <string name="leeftijd">Uw Leeftijd</string>
+    <string name="voornaam">Uw Voornaam</string>
+    <string name="heel_erg_mee_eens">Heel erg mee eens</string>
+    <string name="beetje_mee_eens">Beetje mee eens</string>
+    <string name="niet_zeker">Niet zeker</string>
+    <string name="beetje_mee_oneens">Beetje mee oneens</string>
+    <string name="heel_erg_mee_oneens">Heel erg mee oneens</string>
+    <string name="volgende_vraag">Volgende vraag</string>
+    <string name="je_hebt_een_iq_van">Je hebt een IQ van:</string>
+    <string name="gefeliciteerd">Gefeliciteerd!</string>
+    <string name="go_back"><![CDATA[<- Terug gaan]]></string>
+    <string name="description">Ik heb deze App voor de lol gemaakt. Ik wilde graag leren hoe je met Android Apps kon maken en koos er toen ook voor om Kotlin erbij te leren bij het maken van de app. Het duurde even, maar na een aantal dagen hard te hebben gewerkt heb ik het voltooid.</string>
+    <string name="title_about_me">Over mij en de App</string>
+    <string name="author">Jeannot Makkinje</string>
+</resources>
